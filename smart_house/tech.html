@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Tech" />
+  <title>Tech</title>
+  <link rel="stylesheet" href="css/settings_style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="config-panel">
+    <div class="heading">
+    <div class="config-heading">
+        <h2>Buitinė technika</h2>
+    </div>
+    <div class="exit-btn" onclick="window.location.href='index.html'">
+      <img src="img/home.svg" width="40" height="40" />
+    </div>
+    </div>
+    <div class="config-item config-item-100">
+      <div class="config-name">
+        <p>Šaldytuvas</p>
+      </div>
+    </div>
+    <div class="config-item config-item-70-30">
+      <div class="config-name">
+        <p>Šaldytuvo kameros temp.</p>
+      </div>
+      <div class="config-set">
+        <input type="number" id="fridge-temp" name="fridge-temp" value=""
+        onchange="fridgeTemp()" />
+      </div>
+      <div class="config-name">
+        <p>Šaldiklio kameros temp.</p>
+      </div>
+      <div class="config-set">
+        <input type="number" id="cam-temp" name="fridge-temp" value=""
+        onchange="camTemp()" />
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

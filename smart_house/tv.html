@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="TV" />
+  <title>TV</title>
+  <link rel="stylesheet" href="css/settings_style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="config-panel">
+    <div class="heading">
+    <div class="config-heading">
+        <h2>TV</h2>
+    </div>
+    <div class="exit-btn" onclick="window.location.href='index.html'">
+      <img src="img/home.svg" width="40" height="40" />
+    </div>
+    </div>
+    <div class="config-item config-item-40-60">
+      <div class="config-name">
+        <p>TV</p>
+      </div>
+      <div class="config-set openclose">
+        <p>Išjungtas</p>
+        <label class="switch">
+         <input type="checkbox" id="tv-onoff" onchange="tvOnOff()" />
+         <span class="slider round"></span>
+       </label>
+       <p>Įjungtas</p>
+     </div>
+    </div>
+    <div class="config-item config-item-100">
+      <div class="config-name">
+        <p>Valdymas</p>
+      </div>
+      <div class="config-set">
+        <input type="number" id="tv-ch" name="tv-ch" value="" />
+      </div>
+    </div>
+    <div class="config-item config-item-33-33-33" id="tv-set">
+      <div class="config-set tv-btn" id="tv-1" onclick="b1()">
+        <p>1</p>
+      </div>
+      <div class="config-set tv-btn" id="tv-2" onclick="b2()">
+        <p>2</p>
+      </div>
+      <div class="config-set tv-btn" id="tv-3" onclick="b3()">
+        <p>3</p>
+      </div>
+      <div class="config-set tv-btn" id="tv-4" onclick="b4()">
+        <p>4</p>
+      </div>
+      <div class="config-set tv-btn" id="tv-5" onclick="b5()">
+        <p>5</p>
+      </div>
+      <div class="config-set tv-btn" id="tv-6" onclick="b6()">
+        <p>6</p>
+      </div>
+      <div class="config-set tv-btn" id="tv-7" onclick="b7()">
+        <p>7</p>
+      </div>
+      <div class="config-set tv-btn" id="tv-8" onclick="b8()">
+        <p>8</p>
+      </div>
+      <div class="config-set tv-btn" id="tv-9" onclick="b9()">
+        <p>9</p>
+      </div>
+      <div class="config-set tv-btn" id="tv-ok" onclick="bOk()">
+        <p>OK</p>
+      </div>
+      <div class="config-set tv-btn" id="tv-0" onclick="b0()">
+        <p>0</p>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

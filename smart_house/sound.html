@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Sound" />
+  <title>Sound</title>
+  <link rel="stylesheet" href="css/settings_style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="config-panel">
+    <div class="heading">
+    <div class="config-heading">
+        <h2>Garso sistema</h2>
+    </div>
+    <div class="exit-btn" onclick="window.location.href='index.html'">
+      <img src="img/home.svg" width="40" height="40" />
+    </div>
+    </div>
+    <div class="config-item config-item-33-33-33">
+      <div class="config-set sound-cnt" id="sound-pause"
+      onclick="pauseAudio()">
+        <p>Pause</p>
+      </div>
+      <div class="config-set sound-cnt" id="sound-play"
+      onclick="playAudio()">
+        <p>Play</p>
+      </div>
+      <div class="config-set sound-cnt" id="sound-stop"
+      onclick="stopAudio()">
+        <p>Stop</p>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

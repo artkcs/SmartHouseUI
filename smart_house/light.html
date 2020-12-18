@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Lights" />
+  <title>Lights</title>
+  <link rel="stylesheet" href="css/settings_style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="config-panel">
+    <div class="heading">
+    <div class="config-heading">
+        <h2>Apšvietimas</h2>
+    </div>
+    <div class="exit-btn" onclick="window.location.href='index.html'">
+      <img src="img/home.svg" width="40" height="40" />
+    </div>
+    </div>
+    <div class="config-item config-item-40-60">
+      <div class="config-name">
+        <p>Koridorius</p>
+      </div>
+      <div class="config-set openclose">
+        <p>Išjungtas</p>
+        <label class="switch">
+         <input type="checkbox" id="kor-light" onchange="lightOn1()">
+         <span class="slider round"></span>
+       </label>
+       <p>Įjungtas</p>
+      </div>
+    </div>
+    <div class="config-item config-item-40-60">
+      <div class="config-name">
+        <p>Virtuvė</p>
+      </div>
+      <div class="config-set openclose">
+        <p>Išjungtas</p>
+        <label class="switch">
+         <input type="checkbox" id="kitchen-light" onchange="lightOn2()">
+         <span class="slider round"></span>
+       </label>
+       <p>Įjungtas</p>
+      </div>
+    </div>
+    <div class="config-item config-item-40-60">
+      <div class="config-name">
+        <p>Kambarys</p>
+      </div>
+      <div class="config-set openclose">
+        <p>Atidaryti</p>
+        <label class="switch">
+         <input type="checkbox" id="room-light" onchange="lightOn3()">
+         <span class="slider round"></span>
+       </label>
+       <p>Uždaryti</p>
+      </div>
+    </div>
+    <div class="config-item config-item-40-60">
+      <div class="config-name">
+        <p>Vonia</p>
+      </div>
+      <div class="config-set openclose">
+        <p>Išjungtas</p>
+        <label class="switch">
+         <input type="checkbox" id="bathroom-light" onchange="lightOn4()">
+         <span class="slider round"></span>
+       </label>
+       <p>Įjungtas</p>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
